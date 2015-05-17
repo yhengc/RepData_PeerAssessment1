@@ -162,8 +162,8 @@ act_weekend <- filter(activity, week == "weekend")
 avg_steps_weekend <- tapply(act_weekend$steps, act_weekend$interval, mean, na.rm=TRUE)
 
 # Draw the graph
-plot(x = 1:288, y = avg_steps_weekday, type = "l", xlab = "Steps", ylab = "Frequency (days)", main = "Average Weekday Daily Activity Pattern")
+plot(x = 1:288, y = avg_steps_weekday, type = "l", xlab = "Steps", ylab = "Average Steps", main = "Average Weekday Daily Activity Pattern")
 
-plot(x = 1:288, y = avg_steps_weekend, type = "l", xlab = "Steps", ylab = "Frequency (days)", main = "Average Weekend Daily Activity Pattern")
+plot(x = 1:288, y = avg_steps_weekend, type = "l", xlab = "Steps", ylab = "Average Steps", main = "Average Weekend Daily Activity Pattern")
 
 ```
